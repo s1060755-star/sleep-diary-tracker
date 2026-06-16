@@ -1,4 +1,4 @@
-[16.06.2026 19:57] Сашуня): import json
+import json
 import os
 from datetime import datetime, timedelta
 from typing import List, Dict
@@ -110,7 +110,7 @@ def add_sleep_record(data: List[Dict]) -> List[Dict]:
                 return data
             data = [r for r in data if r["date"] != date]
             break
-[16.06.2026 19:57] Сашуня): print("\n⏰ Введіть час засинання та пробудження:")
+ print("\n⏰ Введіть час засинання та пробудження:")
     sleep_time = get_time_from_user("   Час засинання (HH:MM): ")
     wake_time = get_time_from_user("   Час пробудження (HH:MM): ")
     
